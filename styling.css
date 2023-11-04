@@ -29,19 +29,25 @@ html{
 
 #correct{
   position: absolute;
-  left: 260px;
-  background-color:#529e4a;
-  color:#FFFFFF;
-  padding:11px;
+  left: 75px;
+  top: 425px;
+  /* background-color:#529e4a; */
+  color: rgba(82, 158, 74, .75);
+  font-size: 30px;
+  font-weight: 700;
+  /* padding:11px; */
   display: none;
 }
 
 #wrong{
   position: absolute;
-  left: 250px;
-  background-color:#FF4242;
-  color:#FFFFFF;
-  padding:11px;
+  left: 395px;
+  top: 425px;
+  /* background-color:#FF4242; */
+  color:#ff4242ae;
+  font-size: 30px;
+  font-weight: 700;
+  /* padding:11px; */
   display: none;
 }
 
