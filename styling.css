@@ -4,40 +4,34 @@ html{
   background: -webkit-radial-gradient(circle, #fff, #ccc);
   background: -o-radial-gradient(circle, #fff, #ccc);
   background: -moz-radial-gradient(circle, #fff, #ccc);
+  font-family: 'Karla', sans-serif;
+  color: #0D1F2D;
 }
 
 #container{
-  height:400px;
-  width:550px;
+  height:auto;
+  width:575px;
   background-color:#fcfbf5;
   margin: 100px auto;
   padding: 20px;
   border-radius:10px;
-  box-shadow: 4px 4px #ffd6cc;
-  -webkit-box-shadow: 4px 4px #ffd6cc;
-  -moz-box-shadow: 4px 4px #ffd6cc;
-  /* box-shadow: [horizontal offset] [vertical offset] [blur radius]
-  [optional spread radius] [color]*/
   position: relative;
 }
 
 #score{
-  background-color:#3d3f61;
-  color:white;
+  background-color:#bce7fd;
   padding: 11px;
   position: absolute;
   left: 500px;
-  box-shadow: 0px 4px 0px #3d3f61;
-  -moz-box-shadow: 0px 4px 0px #3d3f61;
-  -webkit-box-shadow: 0px 4px 0px #3d3f61;
+  font-weight: 500;
 
 }
 
 #correct{
   position: absolute;
   left: 260px;
-  background-color:#ffd6cc;
-  color:#3d3f61;
+  background-color:#529e4a;
+  color:#FFFFFF;
   padding:11px;
   display: none;
 }
@@ -45,8 +39,8 @@ html{
 #wrong{
   position: absolute;
   left: 250px;
-  background-color:#ffd6cc;
-  color:#3d3f61;
+  background-color:#FF4242;
+  color:#FFFFFF;
   padding:11px;
   display: none;
 }
@@ -54,46 +48,40 @@ html{
 #question{
   width: 450px;
   height: 150px;
+  padding-top: 20px;
   margin: 50px auto 10px auto;
-  background-color: #ffd6cc;
-  box-shadow: 0px 4px #3d3f61;
-  -webkit-box-shadow: 0px 4px #3d3f61;
-  -moz-box-shadow: 0px 4px #3d3f61;
-  font-size:100px;
+  background-color: #c5efcb;
+  font-size: 100px;
   text-align: center;
-  font-family: serif, sans-serif;
-  color: black;
+  
 }
 
 #instruction{
   width: 450px;
   height: 50px;
-  background-color: #ffab9e;
+  background-color: #c2e812;
   margin: 10px auto;
   text-align: center;
   line-height: 45px;
-  box-shadow: 0px 4px #3d3f61;
-  -moz-box-shadow: 0px 4px #3d3f61;
-  -webkit-box-shadow: 0px 4px #3d3f61;
+  font-weight: 600;
 }
 
 #choices{
   width: 450px;
   height: 100px;
   margin: 5px auto;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .box{
   width: 85px;
   height: 85px;
-  background-color:#ffb43b;
+  background-color:#c5efcb;
   float: left;
   margin-right:36px;
   border-radius: 3px;
   cursor: pointer;
-  box-shadow: 0px 4px #3d3f61;
-  -moz-box-shadow: 0px 4px #3d3f61;
-  -webkit-box-shadow: 0px 4px #3d3f61;
   text-align: center;
   line-height:80px;
   position: relative;
@@ -113,11 +101,8 @@ html{
 }
 
 .box:active, #startreset:active{
-  background-color: #ffb43b;
+  background-color: #bce7fd;
   color: white;
-  box-shadow:0px 4px #3d3f61;
-  -webkit-box-shadow:0px 4px #3d3f61;
-  -moz-box-shadow:0px 4px #3d3f61;
   top: 4px;
 }
 
@@ -128,13 +113,11 @@ html{
 #startreset{
   width: 78px;
   padding: 10px;
-  background-color:#ffb43b;
+  background-color:#bce7fd;
   margin: 0 auto;
   border-radius: 3px;
   cursor: pointer;
-  box-shadow: 0px 4px #3d3f61;
-  -moz-box-shadow: 0px 4px #3d3f61;
-  -webkit-box-shadow: 0px 4px #3d3f61;
+  font-weight: 500;
   text-align: center;
   position: relative;
   transition: all 0.2s;
@@ -145,17 +128,12 @@ html{
 }
 
 #timeremaining{
-  width: 152px;
+  width: 180px;
   padding: 10px;
   position: absolute;
-  top: 395px;
-  left:400px;
-  background-color:#3d3f61;
-  color:white;
+  top: 20px;
+  left:220px;
   border-radius: 3px;
-  box-shadow: 0px 4px #3d3f61;
-  -moz-box-shadow: 0px 4px #3d3f61;
-  -webkit-box-shadow: 0px 4px #3d3f61;
   /*visibility: hidden;*/
   display: none;
 }
@@ -163,10 +141,11 @@ html{
 #gameOver{
   height: 200px;
   width: 500px;
-  background: linear-gradient(#ffab9e, #3d3f61);
+  background-color: #FF4242;
+  /* background: linear-gradient(#ffab9e, #3d3f61);
   background: -moz-linear-gradient(#ffab9e, #3d3f61);
   background: -webkit-linear-gradient(#ffab9e, #3d3f61);
-  background: -o-linear-gradient(#ffab9e, #3d3f61);
+  background: -o-linear-gradient(#ffab9e, #3d3f61); */
   color:white;
   font-size: 2.5em;
   text-align: center;
